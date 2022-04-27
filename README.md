@@ -1,4 +1,4 @@
-# IAP Compute Engine Demo
+# Using the Google Cloud Identity-Aware Proxy with  Compute Engine
 
 ## Introduction
 
