@@ -1,4 +1,4 @@
-# Using the Google Cloud Identity-Aware Proxy with  Compute Engine
+# Using Google Cloud Identity-Aware Proxy with Compute Engine
 
 ## Introduction
 
