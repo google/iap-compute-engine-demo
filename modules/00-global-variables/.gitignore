@@ -1,0 +1,4 @@
+# Ignore the outputs.tf file in this directory since it is modified to
+# define the variables used across modules.
+
+outputs.tf
