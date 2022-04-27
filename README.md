@@ -3,7 +3,7 @@
 ## Introduction
 
 Google Cloud's [Identity-Aware Proxy](https://cloud.google.com/iap) ("IAP") service enables you to control access to your cloud-based and on-premises applications.  You can use IAP to protect web resources such as Google Compute Engine ("GCE") instances running web applications and Google App Engine ("GAE").  Users browsing protected resources must authenticate to gain access.  You can also use [IAP TCP forwarding](https://cloud.google.com/iap/docs/using-tcp-forwarding) to protect TCP resources such as SSH.
-Users attempting to open TCP sessions must also first authenticate before being granted access.  You may want to use both of these capabilities together.  For example, you may want to restrict access to a web application and also limit SSH access to the web server.
+Users attempting to open TCP sessions must also first authenticate before being granted access.  You can use both of these capabilities together.  For example, you may want to restrict access to a web application and also limit SSH access to the web server.
 
 In this demonstration, you will learn how IAP works with both the web and TCP flows.  You will build an environment by running a series of Terraform deployments.
 After you build the environment, you will test both the web and TCP flows.  You will then examine the configurations of the resources using the Google Cloud console to get a better understanding of how to configure IAP.
