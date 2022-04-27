@@ -33,7 +33,7 @@ If the identity has the "IAP-secured Web App User" role, the session passes to t
 
 ## Prerequisites
 
-1. You will the project ID of a new Google Cloud project linked to a billing account.  You should use a new project to avoid intering with other workloads.  IAP branding, which is used in this demonstration, can only be deleted by deleting the GCP project.
+1. You will the project ID of a new Google Cloud project linked to a billing account.  You should use a new project to avoid interfering with other workloads.  IAP branding, which is used in this demonstration, can only be deleted by deleting the GCP project.
 
 2. You will need a workstation with [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) and the [Google Cloud SDK](https://cloud.google.com/sdk/docs/install).  Here are the versions used to create this demo:
 
