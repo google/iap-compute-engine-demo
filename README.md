@@ -33,7 +33,7 @@ If the identity has the "IAP-secured Web App User" role, the session passes to t
 
 ## Prerequisites
 
-1. You will the project ID of a Google Cloud project linked to a billing account.  If possible, use a new project to prevent interference with other workloads.  
+1. You will the project ID of a new Google Cloud project linked to a billing account.  You should use a new project to avoid intering with other workloads.  IAP branding, which is used in this demonstration, can only be deleted by deleting the GCP project.
 
 2. You will need a workstation with [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) and the [Google Cloud SDK](https://cloud.google.com/sdk/docs/install).  Here are the versions used to create this demo:
 
@@ -63,6 +63,9 @@ The email address must belong to the currently logged in user account.
     - The policy "Restrict Load Balancer Creation Based on Load Balancer Types" must allow the EXTERNAL_HTTP_HTTPS load balancer (the classic Global Load Balancer) type.
 
 7. You should be familiar with using the Google Cloud console and Terraform.
+
+8. There are minor charges for the resources used, such as an e2.micro Compute Engine instance.  To avoid future charges, follow the cleanup instructions.
+
 
 ## Build instructions
 
@@ -423,6 +426,8 @@ Please follow the steps below to remove the demonstration environment.
     Respond with *yes* when asked to confirm that you want to destroy the resources.
 
 3. Upon successful completion, you will see "Destroy complete."  You do not have to destroy any of the other modules.
+
+4. If you want to delete the IAP OAuth branding information and are *not* using the GCP project for anything else, you can delete the GCP project.
 
 ## Error messages
 
