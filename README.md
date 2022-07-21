@@ -110,13 +110,13 @@ The email address must belong to the currently logged in user account.
 1. Clone this repository to your workstation.
 
     ```
-    git clone https://github.com/jeffscottlevine/iap-demo.git
+    git clone https://github.com/google/iap-compute-engine-demo.git
    ```
 
 2. Change your working directory to the newly-cloned repository.
 
     ```
-    cd iap-demo
+    cd iap-compute-engine-demo
     ```
 
 3. Set the environment variable to the current directory for easy navigation.
