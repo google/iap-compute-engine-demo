@@ -18,21 +18,10 @@ terraform {
       source = "hashicorp/google"
       version = ">= 4.16.0"
     }
-
-    google-beta = {
-      source = "hashicorp/google"
-      version = ">= 4.16.0"
-    }
   }
 }
 
 provider "google" {
-  project = module.global_variables.project_id
-  region = module.global_variables.region
-  zone = module.global_variables.zone
-}
-
-provider "google-beta" {
   project = module.global_variables.project_id
   region = module.global_variables.region
   zone = module.global_variables.zone
