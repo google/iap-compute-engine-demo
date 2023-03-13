@@ -52,7 +52,7 @@ If the identity has the "IAP-secured Web App User" role, the session passes to t
     - IAP Polcy Admin (for setting up the Identity Aware Proxy)
     - Logging Admin (for managing logs)
     - OAuth Config Editor (for updating the OAuth information)
-    - Service Usage Consumer (for allowing Terraform to use a project for billing and quota purposes)
+    - Service Usage Admin (for allowing Terraform to enable APIs and to use a project for billing and quota purposes)
 
     User IDs in Google Cloud are in the form of email addresses.
     This user ID will also become part of the OAuth and IAP configurations.
