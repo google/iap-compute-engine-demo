@@ -21,7 +21,7 @@ The instance uses [Cloud NAT](https://cloud.google.com/nat/docs/overview) for ou
 The instance has no external IP address to support access from the internet.
 All inbound access, both for web (HTTPS) and ssh (TCP)  will be provided by IAP.
 
-The left section of Figure 1 shows the IAP TCP flow.  A user wanting to SSH into the back end instance clicks the SSH but on the Compute Engine console or uses "gcloud compute ssh --tunel-through-IAP" to begin the session.
+The left section of Figure 1 shows the IAP TCP flow.  A user wanting to SSH into the back end instance clicks the SSH but on the Compute Engine console or uses "gcloud compute ssh --tunnel-through-iap" to begin the session.
 IAP then prompts the user for an identity.
 If the identity has the "IAP-secured Tunnel User" role, an encrypted tunnel is created between the console or the gcloud client to the Google endpoint tunnel.cloudproxy.app.  After the tunnel is created, SSH then begins an encrypted session through the encrypted tunnel to the instance providing two layers of encryption.
 
@@ -49,7 +49,7 @@ If the identity has the "IAP-secured Web App User" role, the session passes to t
 5. You will need a user ID in the Google Cloud project that has accepted the Google Cloud Terms of Service.  The user must have the following IAM roles:
 
     - Compute Admin (for setting up the network, instance, and load balancer)
-    - IAP Polcy Admin (for setting up the Identity Aware Proxy)
+    - IAP Policy Admin (for setting up the Identity Aware Proxy)
     - Logging Admin (for managing logs)
     - OAuth Config Editor (for updating the OAuth information)
     - Service Usage Admin (for allowing Terraform to enable APIs and to use a project for billing and quota purposes)
@@ -298,9 +298,9 @@ In order to launch to display the web server home page, you must make a DNS chan
 
 ### Test the demo
 
-1. To test the web flow, open an incognito/private tab in your brower and browse to the DNS host name that is associated with the SSL certificate and IP address.
+1. To test the web flow, open an incognito/private tab in your browser and browse to the DNS host name that is associated with the SSL certificate and IP address.
 
-2. You will be promped by the Identity-Aware Proxy to authenticate.
+2. You will be prompted by the Identity-Aware Proxy to authenticate.
 
 3. Upon successful authentication, you will see the web server home page with the web server's instance name, internal IP address, and instance ID as shown in Figure 5.
 
